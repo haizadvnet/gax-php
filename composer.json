@@ -5,11 +5,23 @@
     "keywords": ["google"],
     "homepage": "https://github.com/googleapis/gax-php",
     "license": "BSD-3-Clause",
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/DREEBIT/grpc-php"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/haizadvnet/grpc-gcp-php"
+        }
+    ],
     "require": {
         "php": "^8.0",
         "google/auth": "^1.45",
-        "google/grpc-gcp": "^0.4",
-        "grpc/grpc": "^1.13",
+        "google/grpc-gcp": "dev-master",
+        "grpc/grpc": "dev-master",
+        
         "google/protobuf": "^v3.25.3||^4.26.1",
         "guzzlehttp/promises": "^2.0",
         "guzzlehttp/psr7": "^2.0",
